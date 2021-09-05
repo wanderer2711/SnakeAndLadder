@@ -7,7 +7,7 @@ public class SnakeAndLadder {
         // --> Generating Random number between desired range.
         // Min value + (int)(Math.random() * ((Max - Min) + 1))
         int position1 = 0;
-        while (position1 < 100) {
+        while (position1 <= 100) {
             int dice = 1 + (int) (Math.random() * ((6 - 1) + 1));
             int options = 1 + (int) (Math.random() * ((3 - 1) + 1));
 //            System.out.println(dice);
@@ -21,8 +21,7 @@ public class SnakeAndLadder {
                 case 3:
                     position1 -= dice;
             }
-
+            System.out.println(position1);
         }
-        System.out.println(position1);
     }
 }
